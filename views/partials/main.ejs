@@ -1,0 +1,23 @@
+<main>
+    <section>
+        <h2>Messages</h2>
+        <ul>
+            <% messages.forEach((message)=> { %>
+                <li>
+                    <h3>
+                        <%= message.text %>
+                    </h3>
+                    <p>
+                        <%= message.user %>
+                    </p>
+                    <p>
+                        <small>
+                            <%= message.added %>
+                        </small>
+                    </p>
+                </li>
+                <hr />
+            <% }) %>
+        </ul>
+    </section>
+</main>
