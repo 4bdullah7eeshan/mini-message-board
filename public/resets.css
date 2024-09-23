@@ -13,21 +13,14 @@ body {
     display: flex;
     flex-direction: column;
     line-height: 1.5;
+    outline: 1px solid white; 
     
-}
-
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem;
-    outline: 1px solid black; /* Change it as needed */
 }
 
 main {
     flex-grow: 1;
     padding: 0.5rem;
+    outline: 1px solid white; 
 }
 
 footer {
@@ -35,6 +28,6 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem;
-    outline: 1px solid black; /* Change it as needed */
+    padding: 1rem;
+    outline: 1px solid white; 
 }

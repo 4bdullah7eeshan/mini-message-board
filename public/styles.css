@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+
+* {
+    background-color: #0400ff;
+    font-family: 'Anonymous Pro', monospace;
+    color: white;
+    text-align: center;
+}
+
+main,
+form,
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+form {
+    gap: 1rem;
+    outline: 1px solid white;
+    padding: 0.5rem;
+}
+
+section {
+    outline: 1px solid white;
+    padding: 1rem;
+}
+
+/* Minor elements */
+
+ul {
+    list-style-type: none;
+}
+
+input {
+    outline: 1px solid white;
+    padding: 0.3rem;
+}
+
+input,
+input::placeholder {
+    color: white;
+    text-align: left;
+    background-color: white;
+    color: #0400ff;
+}
+
+button {
+    outline: 1px solid white;
+    padding: 0.5rem;
+}
+
+button:hover {
+    background-color: white;
+    color: #0400ff;
+}

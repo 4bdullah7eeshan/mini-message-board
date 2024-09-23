@@ -1,13 +1,14 @@
 <section>
     <h2>Messages</h2>
+    <hr />
     <ul>
         <% messages.forEach((message)=> { %>
             <li>
                 <h3>
-                    <%= message.text %>
+                    <%= message.user %>
                 </h3>
                 <p>
-                    <%= message.user %>
+                    "<%= message.text %>"
                 </p>
                 <p>
                     <small>

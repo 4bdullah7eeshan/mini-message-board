@@ -1,9 +1,6 @@
-<main>
-    <section>
-        <h2>Message Details</h2>
-        <h3><%= message.text %></h3>
-        <p><strong>From:</strong> <%= message.user %></p>
-        <p><strong>Posted on:</strong> <%= message.added %></p>
-        <a href="/">Back to all messages</a>
-    </section>
-</main>
+<section>
+    <h2><%= message.user %></h2>
+    <p>"<%= message.text %>"</p>
+    <p><small><%= message.added %></small></p>
+    <a href="/">Back to all messages</a>
+</section>
