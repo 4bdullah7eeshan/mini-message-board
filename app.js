@@ -10,6 +10,7 @@ app.set("view engine", "ejs");
 
 app.use("/", indexRouter);
 app.use("/new", newMessageRouter);
+app.use(express.urlencoded({ extended: true }));
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Mini Message Board app running on port ${PORT}!`));
