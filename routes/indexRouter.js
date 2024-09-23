@@ -20,4 +20,8 @@ indexRouter.get("/", (req, res) => {
     res.render("pages/index", { title: "Mini Message Board", messages: messages });
 });
 
+indexRouter.post("/new", (req, res) => {
+    res.send('POST request to homepage');
+});
+
 module.exports = indexRouter;
