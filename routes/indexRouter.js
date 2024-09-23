@@ -21,7 +21,7 @@ indexRouter.get("/", (req, res) => {
 });
 
 indexRouter.post("/new", (req, res) => {
-    res.send('POST request to homepage');
+    messages.push({ text: req.body.messages, user: req.body.name, added: new Date() });
 });
 
 module.exports = indexRouter;
