@@ -27,5 +27,4 @@ module.exports = {
     createNewMessage,
     getNewMessage,
     getMessageById,
-}
-
+};

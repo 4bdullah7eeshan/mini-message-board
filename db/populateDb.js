@@ -3,7 +3,6 @@
 const { Client } = require("pg");
 require('dotenv').config();
 
-
 const SQL = `
 CREATE TABLE IF NOT EXISTS messages (
    id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
@@ -38,4 +37,3 @@ async function main() {
 }
   
 main();
-  
