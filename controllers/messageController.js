@@ -7,8 +7,8 @@ const getAllMessages = asyncHandler(async (req, res) => {
 });
 
 const createNewMessage = asyncHandler(async (req, res) => {
-    const { message } = req.body;
-    await db.insertUsername(message);
+    const { name, message } = req.body;
+    await db.insertNewMessage({ text: message, user: name });
     res.redirect("/");
 });
 

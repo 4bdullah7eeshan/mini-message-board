@@ -5,8 +5,8 @@ async function getAllMessages() {
   return rows;
 }
 
-async function insertNewMessage(message) {
-  await pool.query("INSERT INTO messages (message) VALUES ($1)", [message]);
+async function insertNewMessage({ text, user }) {
+  await pool.query("INSERT INTO messages (text, \"user\") VALUES ($1, $2)", [text, user]);
 }
 
 async function getMessageById(id) {
