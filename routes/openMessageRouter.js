@@ -1,13 +1,10 @@
 const { Router } = require("express");
 const messages = require("../data/messages");
+const messageController = require("../controllers/messageController");
+
 
 const openMessageRouter = Router();
 
-openMessageRouter.get("/:id", (req, res) => {
-    const messageId = parseInt(req.params.id, 10); 
-    const message = messages.find(msg => msg.id === messageId);
-
-    res.render("pages/message", { title: message.user, message: message });
-});
+openMessageRouter.get("/:id", messageController.getMessageById);
 
 module.exports = openMessageRouter;
